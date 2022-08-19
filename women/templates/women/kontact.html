@@ -1,0 +1,56 @@
+    {% extends 'women/base.html' %}
+
+{% block content %}
+<body>
+    <div class="content__k">
+        <h2 id="h1__text">Můžete se na nás obrátit s jakýmkoliv dotazem</h2>
+        <div class="line__box">
+            <div class="line"></div>
+        </div>
+        
+        <p id="email__adres">E-mail: valentyno7777@seznam.cz</p>
+
+        <p id="email__adres">Telefon: +420774675115</p>
+
+        <p id="email__adres">IČO: 9032151</p>
+
+        <p id="email__adres">DIČ: CZ09032151</p>
+
+        <div class="content__k">
+            <h2 id="h1__text2">A nebo poslete nam nezavaznu poptavku</h2>
+            <div class="line__box" id="lnn">
+                <div class="line"></div>
+            </div>
+        
+        <form action="" method="post">
+            {% if success %}
+                <div class="alert alert-danger">
+                    <strong>!!!</strong>
+                </div>
+            {% endif %}
+
+            {% csrf_token %}                 
+            {{ form.as_p}}
+            <div class="btn__container">
+                <button type="submit" id="id_submit">Poslat</button>
+            </div>
+        </form>
+        
+    </div>
+
+    
+        
+</body>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+

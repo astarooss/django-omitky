@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link type="text/css" href="{% static 'women/css/styles.css' %}" rel="stylesheet" />
+	<link type="text/css" href="{% static 'women/css/styles_foto.css' %}" rel="stylesheet" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="{% static 'women/images/main_logo.jpg' %}" type="image/x-icon"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="{% static 'women/js/script.js' %}"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	
+	<div class="topnav">
+		<a href="/" class="active">MIDYANKA S.R.O</a>
+
+		<!-- Навигационные ссылки (по умолчанию скрыты) -->
+		<div id="myLinks">
+		  <a href="fotogalerie">Fotogalerie</a>
+		  <a href="cenik">Cenik</a>
+		  <a href="kontact">Kontact</a>
+		</div>
+
+		<!-- "Меню гамбургеров" / "Значок панели" переключение навигационных ссылок -->
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		  <i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	<div class="topnav-1">
+		<a href="/" class="acti">MIDYANKA <br> S.R.O</a>
+		
+		<div class="navbar-wrap">
+			<ul class="navbar-menu">
+				<li><a href="fotogalerie" class="act">Fotogalerie</a></li>
+				<li><a href="cenik" class="act">Cenik</a></li>
+				<li><a href="kontact" class="act">Kontact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+{% block content %}
+{% endblock %}
+</body >
+<footer>
+
+	<div class="footer__contact">
+		<h3 class="footer_h3">Kontacty</h3>
+		<p class="email__adres_footer">E-mail: valentyno7777@seznam.cz</p>
+
+        <p class="email__adres_footer">Telefon: +420774675115</p>
+
+        <p class="email__adres_footer">IČO: 9032151</p>
+
+        <p class="email__adres_footer">DIČ: CZ09032151</p>
+	</div>
+	
+	
+	
+	<div class="footer__name">
+		<p id="footer" >&copy; Valentyn MIdyanka</p>
+	</div>
+	
+
+
+</footer>
+</html>
