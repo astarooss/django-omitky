@@ -126,3 +126,9 @@ STATICFILES_DIRS = []
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+EMAIL_HOST = "smtp.yandex.ru"
+EMAIL_PORT = 465
+EMAIL_HOST_USER = "omitky@yandex.ru"
+EMAIL_HOST_PASSWORD = "thatpqulqapxafou"
+EMAIL_USE_SSL = True

@@ -4,9 +4,9 @@ from django.shortcuts import render, redirect
 from django.template.loader import get_template
 from django.core.mail import EmailMultiAlternatives
 
-from .forms import ContactForm
+from women.forms import ContactForm
 
-from .models import *
+from women.models import *
 
 
 
