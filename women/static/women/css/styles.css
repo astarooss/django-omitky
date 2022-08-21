@@ -99,10 +99,11 @@ h1, h3, h4, h5, h6, body{
 		margin-bottom: 5px;
 		margin-left: 12px;
 		padding-top: 10px;
+		font-size: 17px
 	}
 
 	.email__adres_footer {
-		font-size: 18px;
+		font-size: 14px;
 		margin-left: 23px;
 		line-height: 2;
 	}
@@ -143,7 +144,7 @@ h1, h3, h4, h5, h6, body{
 		text-align: center;
 		color: rgb(255, 255, 255);
 		padding: 10px;
-		font-size: 22px;
+		font-size: 18px;
 		margin-top: 18px;
 		
 	}
@@ -233,6 +234,18 @@ h1, h3, h4, h5, h6, body{
 	}
 	#foto6 {
 		background: url(../images/photo_2022-06-07_11-31-51.jpg) no-repeat;
+		-webkit-background-size: cover;
+	}
+	#foto7 {
+		background: url(../images/photo_7.jpg) no-repeat;
+		-webkit-background-size: cover;
+	}
+	#foto8 {
+		background: url(../images/photo_8.jpg) no-repeat;
+		-webkit-background-size: cover;
+	}
+	#foto9 {
+		background: url(../images/photo_9.jpg) no-repeat;
 		-webkit-background-size: cover;
 	}
 
@@ -463,13 +476,13 @@ h1, h3, h4, h5, h6, body{
 		font-size: 10px;
 		color: #ffffff;
 		margin: 5px;
-		font-size: 16px;
+		font-size: 21px;
 	}
 	.act {
 		margin: 10px;
 		margin-top: 10px;
 		color: #ffffff;
-		font-size: 20px;
+		font-size: 25px;
 	}
 
 	.navbar-menu li {
@@ -505,7 +518,7 @@ h1, h3, h4, h5, h6, body{
 	
 
 	.email__adres_footer {
-		font-size: 16px;
+		font-size: 20px;
 		margin-left: 26px;
 		margin-top: 10px;
 	}

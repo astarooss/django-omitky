@@ -27,7 +27,7 @@ def kontact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            send_message(form.cleaned_data['name'], form.cleaned_data['email'], form.cleaned_data['message'])
+            send_message(form.cleaned_data['name'], form.cleaned_data['email'], form.cleaned_data['message'], form.cleaned_data['phone'])
             context = {'success': 1}
     else:
         form = ContactForm()
@@ -35,15 +35,15 @@ def kontact(request):
     return render(request, 'women/kontact.html',context=context)
 
 
-def send_message(name, email, message):
+def send_message(name, email, message, phone):
     text = get_template('women/message.html')
     html = get_template('women/message.html')
-    context = {'name': name, 'email': email, 'message': message}
+    context = {'name': name, 'email': email, 'message': message, 'phone': phone}
     subject = 'Сообщение от пользователя'
-    from_email = 'from@example.com'
+    from_email = 'omitky@yandex.ru'
     text_content = text.render(context)
     html_content = html.render(context)
 
-    msg = EmailMultiAlternatives(subject, text_content, from_email, ['vladik.miduan@gmail.com'])
+    msg = EmailMultiAlternatives(subject, text_content, from_email, ['omitky@yandex.ru'])
     msg.attach_alternative(html_content, 'text/html')
     msg.send()
